@@ -112,13 +112,14 @@ Do it by yourself and send me a me a pull request :)
 * you still need to download `Voltageshift Distribution`
 * run the following
 
-`cd <Voltageshift uncompressed folder> `
-`chown -R 0:0 *`
-`sudo cp ./voltageshift /usr/local/bin # if you need it`
-`./voltageshift buildlaunchctl -125 -125 -125 -75 0 0 1 57 108 1 60 # those parameters may not work for you! use at your own risk!`
+```
+cd <Voltageshift uncompressed folder>
+chown -R 0:0 *
+sudo cp ./voltageshift /usr/local/bin # if you need it
+./voltageshift buildlaunchctl -125 -125 -125 -75 0 0 1 57 108 1 60 # those parameters may not work for you! use at your own risk!
+```
 
-* optionally you may want to delete `VoltageShift.kext` from `/Library` as it's not needed becuase the kext is loaded by `OpenCore` in this setup.
-
+* optionally you may want to delete `VoltageShift.kext` from `/Library` as it's not needed (the kext is already loaded by `OpenCore` in this setup).
 
 
 ## Additional Features
