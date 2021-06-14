@@ -80,7 +80,7 @@ process_files() {
   echo
 
   out "adding files..."
-  run git add "OC" "BOOT" .gitattributes "*.png"
+  run git add "OC" "BOOT" "README" .gitattributes 
 }
 
 init_lfs() {
