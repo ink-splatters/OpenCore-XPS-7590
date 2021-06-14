@@ -69,7 +69,15 @@ encrypt() {
 decrypt() {
   prepare
 
-  run "pbpaste | shasum -a 256 | tr -d \" -\" | openssl enc -aes-256-cbc -nosalt -d -kfile /dev/stdin -iv $(cat $iv_file) -in \"$script_dir/OC/config.enc\""
+  set +e
+  run "pbpaste | shasum -a 256 | tr -d \" -\" | openssl enc -aes-256-cbc -nosalt -d -kfile /dev/stdin -iv $(cat $iv_file) -in \"$script_dir/OC/config.enc\" 1> \"$script_dir/OC/config.dec\" 2> /dev/stdout"
+  if [[ $? != 0 ]]; then
+    err "decryption failed!"
+    rm -f "$script_dir/OC/confic.dec"
+    exit 1
+  fi
+  out "decrypted file stored: $script_dir/OC/config.dec. you should manually rename it to config.plist if needed"
+  set -e
 
 }
 
