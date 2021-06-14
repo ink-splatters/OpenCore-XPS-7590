@@ -2,6 +2,15 @@
 
 Yet another (unpolished) OpenCore setup for Dell XPS 7590
 
+## Features
+
+for the sake of flaunting:
+
+* using `git lfs` for storing binary files, so `git lfs update` upon cloning
+* storing `config.plist` in encrypted form (well, because it's my backup)
+* there is unencrypted `config.plist` without System Information
+
+
 ## System info
 
 ![System Info](README/system.png)
@@ -39,7 +48,7 @@ Hotspot does not work (Big Sur 11.4).
 
 ## NVMe
 
-Samsung EVO 970 1TB
+### Samsung EVO 970 1TB
 
 ![Graphics](README/NVMe.png)
 
@@ -47,4 +56,4 @@ Samsung EVO 970 1TB
 
 ## TODO
 
-refinement
+refine
