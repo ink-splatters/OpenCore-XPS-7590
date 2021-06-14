@@ -8,7 +8,8 @@ Yet another (unpolished) OpenCore setup for Dell XPS 7590
 
 ## Graphics
 
-* Intel UHD 630
+### Intel UHD 630
+
 * Display Profile: not set (presumably Sharp display); TODO
 
 ![Graphics](README/graphics.png)
@@ -16,22 +17,21 @@ Yet another (unpolished) OpenCore setup for Dell XPS 7590
 
 ## Networking
 
-DW1820A
+### DW1820A
 
-### WiFi
+#### WiFi
 
 ![Graphics](README/WiFi.png)
 
-### Bluetooth
+#### Bluetooth
 
+![Graphics](README/bluetooth.png)
 
-![Graphics](README/Bluetooth.png)
-
-### Caveats
+#### Caveats
 
 Hotspot does not work (Big Sur 11.4).
 
-#### Sometimes-working workaround:
+##### Sometimes-working workaround:
 
 * discover and connect to iPhone via bluetooth first
 * try to connect using hotspot
@@ -41,7 +41,7 @@ Hotspot does not work (Big Sur 11.4).
 
 Samsung EVO 970 1TB
 
-![Graphics](README/NVME.png)
+![Graphics](README/NVMe.png)
 
 
 
