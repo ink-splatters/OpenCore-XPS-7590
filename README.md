@@ -87,7 +87,7 @@ Currently in use:
  disksleep            10
  standbydelayhigh     86400
  sleep                1
- hibernatemode        3
+ hibernatemode        25 
  ttyskeepawake        1
  displaysleep         60
  tcpkeepalive         1
