@@ -4,7 +4,7 @@ Yet another (unpolished) OpenCore setup for Dell XPS 7590
 
 ## Current OpenCore Version
 
-`0.6.9`
+`0.7.0`
 
 ## Tested on
 

@@ -82,7 +82,7 @@ decrypt() {
 }
 
 process_files() {
-  local filter=("*.efi" "*.icns" ".*Contents/MacOS.*" "*.bin" "*.lbl" "*.l2x" "*.png" "*.icns")
+  local filter=("*.efi" "*.icns" ".*Contents/MacOS.*" "*.bin" "*.lbl" "*.l2x" "*.png" )
 
   for f in "${filter[@]}"; do lfs_track $f; done
   echo

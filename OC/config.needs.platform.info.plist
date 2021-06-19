@@ -1167,7 +1167,7 @@
 				<key>boot-args</key>
 				<string>swd_panic=1 keepsyms=1 agdpmod=vit9696 -igfxmpc -igfxblr -igfxlspcon igfxonln=1 -igfxmlr igfxrpsc=1 igfxfw=2 brcmfx-country=#a -hbfx-dump-nvram -v</string>
 				<key>csr-active-config</key>
-				<data>ZwIAAA==</data>
+				<data>YwIAAA==</data>
 			</dict>
 		</dict>
 		<key>Delete</key>
